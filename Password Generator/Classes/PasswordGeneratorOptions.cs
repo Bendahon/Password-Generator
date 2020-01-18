@@ -15,8 +15,8 @@ namespace Password_Generator.Classes
         public bool Misc { get; set; }
         public bool Uppercase { get; set; }
         public bool Lowercase { get; set; }
-        public string CharSets { get; set; }
-        public string PatternString { get; set; } = string.Empty;
+        public string CharSets = string.Empty;
+        public string PatternString = string.Empty;
 
         public void PasswordGenerationOptions()
         {
@@ -91,23 +91,11 @@ namespace Password_Generator.Classes
             {
                 CharSets += cs.Maths;
             }
-            // Redact stupid stuff
-            //CharSets = RandomiseString(CharSets);
         }
 
         public void StorePatternString(string Pattern)
         {
             PatternString = Pattern;
-        }
-
-        public string RandomiseString(string ToRandom)
-        {
-            // I think this is pointless
-            // REDACTED. I think for good reason
-            string opreturn = string.Empty;
-            Random r = new Random();
-            opreturn = new string(ToRandom.ToCharArray().OrderBy(s => (r.Next(2) % 2) == 0).ToArray());
-            return opreturn;
         }
     }
 }

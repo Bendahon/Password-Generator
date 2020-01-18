@@ -13,7 +13,6 @@ namespace Password_Generator.Classes
             Pass_Options = inputOp;
         }
 
-
         public string GenerateAPassword()
         {
             string OutputString = string.Empty;
@@ -120,6 +119,5 @@ namespace Password_Generator.Classes
             }
             return OutputString;
         }
-
     }
 }

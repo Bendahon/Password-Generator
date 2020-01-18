@@ -10,7 +10,6 @@ namespace Password_Generator.Classes
         public readonly string Uppercase_Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public string GetRandomUppercaseAlph()
         {
-            string s = string.Empty;
             int index = r.Next(0, Uppercase_Alphabet.Length);
             return Uppercase_Alphabet[index].ToString();
         }
@@ -19,7 +18,6 @@ namespace Password_Generator.Classes
         public readonly string Lowercase_Alphabet = "abcdefghijklmnopqrstuvwxyz";
         public string GetRandomLowercaseAlph()
         {
-            string s = string.Empty;
             int index = r.Next(0, Lowercase_Alphabet.Length);
             return Lowercase_Alphabet[index].ToString();
         }
@@ -28,7 +26,6 @@ namespace Password_Generator.Classes
         public readonly string Numbers = "0123456789";
         public string GetRandomNumber()
         {
-            string s = string.Empty;
             int index = r.Next(0, Numbers.Length);
             return Numbers[index].ToString();
         }
@@ -36,7 +33,6 @@ namespace Password_Generator.Classes
         public readonly string Maths = @" /*-+()\";
         public string GetRandomMath()
         {
-            string s = string.Empty;
             int index = r.Next(0, Maths.Length);
             return Maths[index].ToString();
         }
@@ -44,7 +40,6 @@ namespace Password_Generator.Classes
         public readonly string Special = "`~!@#$%^&_[]{}|;:'\",<.>/?";
         public string GetRandomSpecial()
         {
-            string s = string.Empty;
             int index = r.Next(0, Special.Length);
             return Special[index].ToString();
         }
@@ -52,7 +47,6 @@ namespace Password_Generator.Classes
         public readonly string HexChars = "0123456789ABCDEF";
         public string GetRandomHexChar()
         {
-            string s = string.Empty;
             int index = r.Next(0, HexChars.Length);
             return HexChars[index].ToString();
         }
@@ -71,7 +65,6 @@ namespace Password_Generator.Classes
         public readonly string MixCaseAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         public string GetRandomMixedAlph()
         {
-            string s = string.Empty;
             int index = r.Next(0, MixCaseAlphabet.Length);
             return MixCaseAlphabet[index].ToString();
         }
@@ -79,7 +72,6 @@ namespace Password_Generator.Classes
         public readonly string Uppercase_Vowels = "AEIOU";
         public string GetRandomUpperVowel()
         {
-            string s = string.Empty;
             int index = r.Next(0, Uppercase_Vowels.Length);
             return Uppercase_Vowels[index].ToString();
         }
@@ -87,7 +79,6 @@ namespace Password_Generator.Classes
         public readonly string Lowercase_Vowels = "aeiou";
         public string GetRandomLowerVowel()
         {
-            string s = string.Empty;
             int index = r.Next(0, Lowercase_Vowels.Length);
             return Lowercase_Vowels[index].ToString();
         }
@@ -95,7 +86,6 @@ namespace Password_Generator.Classes
         public readonly string Uppercase_Consonant = "BCDFGHJKLMNPQRSTVWXYZ";
         public string GetRandomUpperConst()
         {
-            string s = string.Empty;
             int index = r.Next(0, Uppercase_Consonant.Length);
             return Uppercase_Consonant[index].ToString();
         }
@@ -103,7 +93,6 @@ namespace Password_Generator.Classes
         public readonly string Lowercase_Consonant = "bcdfghjklmnpqrstvwxyz";
         public string GetRandomLowerConst()
         {
-            string s = string.Empty;
             int index = r.Next(0, Lowercase_Consonant.Length);
             return Lowercase_Consonant[index].ToString();
         }
@@ -111,7 +100,6 @@ namespace Password_Generator.Classes
         public readonly string Brackets = "()[]{}<>";
         public string GetRandomBracket()
         {
-            string s = string.Empty;
             int index = r.Next(0, Brackets.Length);
             return Brackets[index].ToString();
         }
@@ -119,7 +107,6 @@ namespace Password_Generator.Classes
         public readonly string Space = " ";
         public string GetJustASpace()
         {
-            string s = string.Empty;
             int index = r.Next(0, Space.Length);
             return Space[index].ToString();
         }
